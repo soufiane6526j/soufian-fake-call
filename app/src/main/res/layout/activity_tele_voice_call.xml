@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:scaleType="centerCrop"
+        android:src="@drawable/hero_image"
+        android:visibility="visible" />
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:background="#66000000"/>
+    <LinearLayout
+        android:orientation="vertical"
+        android:background="#10000000"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="50dp">
+                <ImageView
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:layout_marginLeft="10dp"
+                    app:srcCompat="@drawable/ic_arrow_back_white_24dp"/>
+                <LinearLayout
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:visibility="invisible"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+                    <ImageView
+                        android:layout_width="15dp"
+                        android:layout_height="15dp"
+                        app:srcCompat="@drawable/ic_baseline_lock_24"/>
+                    <TextView
+                        android:textColor="@color/white"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp" />
+                </LinearLayout>
+                <ImageView
+                    android:visibility="invisible"
+                    android:layout_width="25dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    app:srcCompat="@drawable/ic_baseline_person_add_24"/>
+            </LinearLayout>
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_gravity="center"
+                android:visibility="gone"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"
+                android:src="@drawable/avatar_contact"/>
+            <TextView
+                android:textSize="30sp"
+                android:textColor="@color/white"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/Chat_name"/>
+            <TextView
+                android:textColor="@color/white"
+                android:gravity="center"
+                android:id="@+id/txtcall"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:text="Telegram call"/>
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"/>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:id="@+id/atas"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <LinearLayout
+                        android:gravity="center"
+                        android:layout_gravity="center"
+                        android:orientation="vertical"
+                        android:visibility="gone"
+                        android:layout_width="75dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1">
+                        <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"/>
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="35dp"
+                            app:srcCompat="@drawable/ic_baseline_keyboard_arrow_up_242"/>
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="35dp"
+                            app:srcCompat="@drawable/ic_baseline_keyboard_arrow_up_242"/>
+                        <ImageView
+                            android:layout_width="match_parent" android:layout_height="35dp" app:srcCompat="@drawable/ic_baseline_keyboard_arrow_up_24"/>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:id="@+id/lmnrt"
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent" android:layout_weight="1">
+
+                            <RelativeLayout
+                                android:id="@+id/rejectcall"
+                                android:layout_width="65dp"
+                                android:layout_height="65dp"
+                                android:layout_centerInParent="true"
+                                android:layout_marginBottom="20dp"
+                                android:background="@drawable/elipse"
+                                android:gravity="center">
+
+                                <ImageView
+                                    android:layout_width="35dp"
+                                    android:layout_height="35dp"
+                                    app:srcCompat="@drawable/ic_baseline_call_end_24" />
+                            </RelativeLayout>
+                        </RelativeLayout>
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1">
+                            <RelativeLayout
+                                android:gravity="center"
+                                android:id="@+id/answercall"
+                                android:background="@drawable/elipse_hijau" android:layout_width="65dp" android:layout_height="65dp" android:layout_marginBottom="20dp" android:layout_centerInParent="true">
+
+                                <ImageView
+                                    android:layout_width="45dp"
+                                    android:layout_height="45dp"
+                                    app:srcCompat="@drawable/ic_baseline_local_phone_24" />
+                            </RelativeLayout>
+                        </RelativeLayout>
+                        <RelativeLayout android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_weight="1">
+                            <RelativeLayout android:gravity="center"
+                                android:background="@drawable/elipse_hitam" android:layout_width="55dp" android:layout_height="55dp" android:layout_marginBottom="20dp" android:layout_centerInParent="true">
+                                <ImageView
+                                    android:layout_width="30dp" android:layout_height="30dp" app:srcCompat="@drawable/ic_baseline_insert_comment_24"/>
+                            </RelativeLayout>
+                        </RelativeLayout>
+                    </LinearLayout>
+
+                </LinearLayout>
+            </LinearLayout>
+        </RelativeLayout>
+        <LinearLayout android:orientation="horizontal"
+            android:id="@+id/inf"
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="75dp">
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginBottom="10dp" android:layout_weight="1">
+                <RelativeLayout android:gravity="center" android:background="@drawable/elipse_transparan" android:layout_width="50dp" android:layout_height="50dp">
+                    <ImageView
+                        android:layout_width="30dp" android:layout_height="30dp" app:srcCompat="@drawable/ic_baseline_volume_up_24"/>
+                </RelativeLayout>
+                <TextView android:textColor="@color/white" android:gravity="center"
+                    android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Loudspeaker"/>
+            </LinearLayout>
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginBottom="10dp" android:layout_weight="1">
+                <RelativeLayout android:gravity="center" android:background="@drawable/elipse_putih" android:layout_width="50dp" android:layout_height="50dp">
+                    <ImageView
+                        android:layout_width="30dp" android:layout_height="30dp" app:srcCompat="@drawable/ic_baseline_videocam_off_24x"/>
+                </RelativeLayout>
+                <TextView android:textColor="@color/white" android:gravity="center"
+                    android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Start Video"/>
+            </LinearLayout>
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginBottom="10dp" android:layout_weight="1">
+                <RelativeLayout android:gravity="center" android:background="@drawable/elipse_transparan" android:layout_width="50dp" android:layout_height="50dp">
+                    <ImageView
+                        android:layout_width="30dp" android:layout_height="30dp" app:srcCompat="@drawable/ic_baseline_mic_off_24"/>
+                </RelativeLayout>
+                <TextView android:textColor="@color/white" android:gravity="center"
+                    android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Mute"/>
+            </LinearLayout>
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginBottom="10dp" android:layout_weight="1">
+                <RelativeLayout
+                    android:gravity="center"
+                    android:id="@+id/endCallbtn" android:background="@drawable/elipse" android:layout_width="50dp" android:layout_height="50dp">
+                    <ImageView
+                        android:layout_width="30dp" android:layout_height="30dp" app:srcCompat="@drawable/ic_baseline_call_end_24"/>
+                </RelativeLayout>
+                <TextView android:textColor="@color/white" android:gravity="center"
+                    android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Close"/>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

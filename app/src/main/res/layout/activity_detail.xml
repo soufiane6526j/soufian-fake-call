@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:background="@drawable/backk"
+    android:layout_width="match_parent"
+    tools:context=".DetailActivity"
+    android:layout_height="match_parent">
+    <ScrollView
+        android:layout_above="@id/bnr"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <include layout="@layout/layout_ad"/>
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp">
+                <RelativeLayout
+                    android:background="@color/btn_color"
+                    android:layout_width="wrap_content"
+                    android:layout_height="80dp">
+
+                    <TextView
+                        android:id="@+id/textView6"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:padding="2dp"
+                        android:text="Action"
+                        android:textColor="@color/white"
+                        android:textStyle="bold" />
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/textView6"
+                        android:background="@drawable/custom_button_details_white"
+                        android:padding="5dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginTop="10dp"
+                            android:orientation="horizontal">
+
+                            <RadioGroup
+                                android:id="@+id/list_action"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_gravity="center"
+                                android:orientation="horizontal">
+
+                                <RadioButton
+                                    android:id="@+id/rdvid"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginEnd="10dp"
+                                    android:text="Video Call"
+                                    android:textColor="@color/text_color" />
+
+                                <RadioButton
+                                    android:id="@+id/rdvoic"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Voice Call"
+                                    android:textColor="@color/text_color" />
+                            </RadioGroup>
+                        </LinearLayout>
+                    </RelativeLayout>
+                </RelativeLayout>
+                <RelativeLayout
+                    android:background="@color/btn_color"
+                    android:layout_width="wrap_content"
+                    android:layout_height="80dp"
+                    android:layout_marginTop="10dp">
+
+                    <TextView
+                        android:id="@+id/textView7"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:padding="2dp"
+                        android:text="Template"
+                        android:textColor="@color/white"
+                        android:textStyle="bold" />
+                    <RelativeLayout
+                        android:background="@drawable/custom_button_details_white"
+                        android:padding="5dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/textView7">
+                        <LinearLayout
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="5dp">
+                            <RadioGroup
+                                android:orientation="horizontal"
+                                android:id="@+id/lict_form"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+
+                                <RadioButton
+                                    android:id="@+id/rdwhatsap"
+                                    android:layout_width="29dp"
+                                    android:layout_height="wrap_content" />
+
+                                <TextView
+                                    android:layout_marginEnd="10dp"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="WhatsApp"
+                                    android:textColor="@color/text_color" />
+                                <RadioButton
+                                    android:id="@+id/rdfacebook"
+                                    android:layout_width="29dp"
+                                    android:layout_height="wrap_content"/>
+                                <TextView
+                                    android:layout_marginEnd="10dp"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Facebook"
+                                    android:textColor="@color/text_color" />
+                                <RadioButton
+                                    android:id="@+id/rdtelegram"
+                                    android:visibility="visible"
+                                    android:layout_width="29dp"
+                                    android:layout_height="wrap_content" />
+                                <TextView
+                                     android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Telegram"
+                                    android:textColor="@color/text_color" />
+                            </RadioGroup>
+                        </LinearLayout>
+                    </RelativeLayout>
+                </RelativeLayout>
+                <RelativeLayout
+                    android:background="@color/btn_color"
+                    android:layout_width="wrap_content"
+                    android:layout_height="80dp"
+                    android:layout_marginTop="10dp">
+
+                    <TextView
+                        android:id="@+id/textView8"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:padding="2dp"
+                        android:text="Time:"
+                        android:textColor="@color/white"
+                        android:textStyle="bold" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:layout_below="@+id/textView8"
+                        android:background="@drawable/custom_button_details_white"
+                        android:padding="5dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginBottom="10dp"
+                            android:orientation="horizontal">
+
+                            <RadioGroup
+                                android:id="@+id/list_time"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="horizontal">
+
+                                <RadioButton
+                                    android:id="@+id/rdNow"
+                                    android:layout_width="32dp"
+                                    android:layout_height="wrap_content" />
+                                <TextView
+                                    android:layout_marginEnd="5dp"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="now"
+                                    android:textColor="@color/text_color" />
+
+                                <RadioButton
+                                    android:id="@+id/rd10"
+                                    android:layout_width="29dp"
+                                    android:layout_height="wrap_content" />
+                                <TextView
+                                    android:layout_marginEnd="5dp"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="10s"
+                                    android:textColor="@color/text_color" />
+
+                                <RadioButton
+                                    android:id="@+id/rd30"
+                                    android:layout_width="33dp"
+                                    android:layout_height="wrap_content" />
+                                <TextView
+                                    android:layout_marginEnd="5dp"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="30s"
+                                    android:textColor="@color/text_color" />
+
+                                <RadioButton
+                                    android:id="@+id/rd60"
+                                    android:layout_width="35dp"
+                                    android:layout_height="wrap_content" />
+                                <TextView
+                                    android:layout_marginEnd="5dp"
+                                    android:layout_width="33dp"
+                                    android:layout_height="wrap_content"
+                                    android:text="1 m"
+                                    android:textColor="@color/text_color" />
+                                <RadioButton
+                                    android:id="@+id/rd300"
+                                    android:layout_width="32dp"
+                                    android:layout_height="wrap_content" />
+                                <TextView
+                                    android:layout_marginEnd="5dp"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="5 m"
+                                    android:textColor="@color/text_color" />
+                            </RadioGroup>
+                        </LinearLayout>
+                    </RelativeLayout>
+                </RelativeLayout>
+                <Button
+                    android:layout_marginTop="10dp"
+                    android:textColor="@color/white"
+                    android:layout_gravity="center"
+                    android:onClick="setAl"
+                    android:backgroundTint="@color/btn_color"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:text="Start CALL"
+                    android:textAllCaps="false"/>
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+    <include
+        android:id="@+id/bnr"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        layout="@layout/banner_layout"/>
+
+ </RelativeLayout>
